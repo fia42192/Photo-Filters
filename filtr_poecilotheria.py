@@ -1,5 +1,8 @@
 from PIL import Image
-obrazek = Image.open("poecilotheria.jpg")
+print("Vyber jeden z následujícíh souborů k úpravě:")
+print("leiurus.jpg nebo poecilotheria.jpg")
+x = input(": ")
+obrazek = Image.open(x)
 sirka, vyska = obrazek.size
 def uprava_barev():
     x = 0    
@@ -18,3 +21,4 @@ def uprava_barev():
     obrazek.show()
 # display(obrazek) #obrazek.show()
 uprava_barev()
+
